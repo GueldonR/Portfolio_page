@@ -1,3 +1,3 @@
 ## 🌟 Preview
 
-![Portfolio Screenshot](src/assets/screenshot.png)
+![Portfolio Screenshot](portfolio/src/assets/screenshot.png)
