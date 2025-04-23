@@ -1,0 +1,53 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 170px;
+}
+
+.Navbar_listitem{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 75px; 
+    font-size: 20px;
+}
+
+.nav_connect{
+
+    padding: 20px 30px;
+    margin-left: 40px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.36%);
+      font-size: 22px;
+      cursor: pointer;
+      transition: 0.5s;
+      animation: gradientMove 4s infinite ease-in-out;
+      background-size: 200% 200%;
+    }
+
+    .nav_connect:hover{
+        transform: scale(1.05);
+    }
+
+
+    @keyframes gradientMove {
+        0% {
+            background-position: 0% 50%;
+        }
+        20% {
+            background-position: 25% 40%;
+        }
+        40% {
+            background-position: 50% 60%;
+        }
+        60% {
+            background-position: 75% 40%;
+        }
+        80% {
+            background-position: 100% 60%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
