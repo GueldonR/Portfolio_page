@@ -1,4 +1,4 @@
-My portfolio website, note that it is a work in progress! 
+My portfolio website, note that it is a work in progress!
 
 ## 🌟 Preview
 
