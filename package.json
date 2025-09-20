@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "got": "^14.4.6",
     "motion": "^12.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "react-placeholder-image": "^0.1.8",
+    "react-slick": "^0.31.0",
+    "slick-carousel": "^1.8.1",
     "style-components": "^0.1.0"
   },
   "devDependencies": {
