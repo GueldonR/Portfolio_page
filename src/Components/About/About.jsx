@@ -8,48 +8,48 @@ const About = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     swipeToSlide: 1,
     autoplay: true,
-    speed: 3000,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     cssEase: "linear",
     pauseOnDotsHover: true,
     pauseOnHover: true,
     pauseOnFocus: true,
+    focusOnSelect: true,
   };
 
-  function CustomSlide(props) {
-    const { index, ...otherProps } = props;
-    return (
-      <div {...otherProps}>
-        <h3>{index}</h3>
-      </div>
+  function CustomSlide({ index, placeholderUrl }) {
+    return index === 1 ? (
+      <img src={placeholderUrl} alt={`Slide ${index}`} />
+    ) : (
+      <img src="vite.svg" alt={`Slide ${index}`} />
     );
   }
 
   const placeholderUrl = "vite.svg";
+
   return (
     <div className="slider-container">
       <Slider {...settings}>
         <div>
           <section>
             <h1>1</h1>
-            <img src={CustomSlide} alt="Slide 1" />
+            <CustomSlide index={1} placeholderUrl={placeholderUrl} />
           </section>
         </div>
         <div>
           <section>
             <h1>2</h1>
-            <img src={CustomSlide} alt="Slide 2" />
+            <CustomSlide index={2} placeholderUrl={placeholderUrl} />
           </section>
         </div>
         <div>
           <section>
             <h1>3</h1>
-            <img src={CustomSlide} alt="Slide 3" />
+            <CustomSlide index={3} placeholderUrl={placeholderUrl} />
           </section>
         </div>
       </Slider>
