@@ -1,8 +1,9 @@
-.slick-list{
-display: flex; 
+section {
+  display: flex; 
+  justify-content: center;
 };
 
-div {
-
+.slidercontainer{
   
-};
+
+};  

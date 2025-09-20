@@ -11,25 +11,49 @@ const About = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    swipeToSlide: 1,
+    autoplay: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    cssEase: "linear",
+    pauseOnDotsHover: true,
+    pauseOnHover: true,
+    pauseOnFocus: true,
   };
+
+  function CustomSlide(props) {
+    const { index, ...otherProps } = props;
+    return (
+      <div {...otherProps}>
+        <h3>{index}</h3>
+      </div>
+    );
+  }
 
   const placeholderUrl = "vite.svg";
   return (
-
-    <Slider {...settings}>
-      <div>
-        <h1>1</h1>
-        <img src={placeholderUrl} alt="Slide 1" />
-      </div>
-      <div>
+    <div className="slider-container">
+      <Slider {...settings}>
+        <div>
+          <section>
+            <h1>1</h1>
+            <img src={CustomSlide} alt="Slide 1" />
+          </section>
+        </div>
+        <div>
+          <section>
             <h1>2</h1>
-        <img src={placeholderUrl} alt="Slide 2" />
-      </div>
-      <div>
+            <img src={CustomSlide} alt="Slide 2" />
+          </section>
+        </div>
+        <div>
+          <section>
             <h1>3</h1>
-        <img src={placeholderUrl} alt="Slide 3" />
-      </div>
-    </Slider>
+            <img src={CustomSlide} alt="Slide 3" />
+          </section>
+        </div>
+      </Slider>
+    </div>
   );
 };
 
