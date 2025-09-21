@@ -5,6 +5,12 @@ section {
 };
 
 img{
- size: 10px; 
+width: 100%;
+  height: 100%;
+  object-fit: contain; /* or 'cover' to prevent overflow */
 };  
 
+.each-slide{
+
+   height: 350px; /* Set a fixed height for the container */
+}; 

@@ -5,9 +5,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "./About.css";
 
 // Import of slide pictures
-import slide1pic from "../../assets/1.jpg";
+import slide1pic from "../../assets/slide1.jpg";
 import slide2pic from "../../assets/CIRCLE_APP_ICON_05.svg";
-import slide3pic from "../../assets/";
+import slide3pic from "../../assets/slide3.jpg";
+import { color } from "motion/react";
 
 const About = () => {
   const settings = {
@@ -25,8 +26,12 @@ const About = () => {
   };
 
   const slides = [
-    { id: 1, img: slide1pic, title: "Hackathon Win" },
-    { id: 2, img: slide2pic, title: "Another Slide" },
+    { id: 1, img: slide1pic, title: "MTU Hackathon winner" },
+    {
+      id: 2,
+      img: slide2pic,
+      title: "Currently a Software Dev at Circle Socials",
+    },
     { id: 3, img: slide3pic, title: "Third Slide" },
   ];
 
@@ -34,7 +39,7 @@ const About = () => {
     <div className="slider-container">
       <Slider {...settings}>
         {slides.map((slide) => (
-          <div key={slide.id}>
+          <div key={slide.id} className="each-slide">
             <section>
               <h1>{slide.title}</h1>
               <img src={slide.img} alt={slide.title} className="slide-image" />
