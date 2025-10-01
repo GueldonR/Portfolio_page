@@ -7,7 +7,7 @@ import "./About.css";
 // Import of slide pictures
 import slide1pic from "../../assets/slide1.jpg";
 import slide2pic from "../../assets/CIRCLE_APP_ICON_05.svg";
-import slide3pic from "../../assets/slide3.jpg";
+//import slide3pic from "../../assets/slide3.jpg";
 import { color } from "motion/react";
 
 const About = () => {
@@ -32,7 +32,7 @@ const About = () => {
       img: slide2pic,
       title: "Currently a Software Dev at Circle Socials",
     },
-    { id: 3, img: slide3pic, title: "Third Slide" },
+    // { id: 3, img: slide3pic, title: "Third Slide" },
   ];
 
   return (

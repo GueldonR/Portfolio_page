@@ -5,13 +5,7 @@
     margin: 20px 170px;
 }
 
-.Navbar_listitem{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 75px; 
-    font-size: 20px;
-}
+
 
 .nav_connect{
 
@@ -50,4 +44,10 @@
         100% {
             background-position: 0% 50%;
         }
+    }
+
+    .Navbar_listitem{
+
+        list-style: armenian;
+
     }
